@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Race & Genetics</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+            
+            body {
+                font-family: "Raleway", sans-serif;
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                height: 100vh;
+                padding:0;
+                margin: 0;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 12px;
+                height:300px;
+                object-fit: cover;
+                margin: 0;
+                padding: 0;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .container{
+                max-width: 25vw;
+                min-width: 400px;
+                margin: 0;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+                position: absolute;
+            }
+
+            .card{
+                padding: 8px;
+                margin: 0;
+            }
+
+            .name {
+                font-size: 2.5em;
+                font-weight: 600;
+
+                left:50%;
+                text-align: center;
+                width:100%;
+                position: absolute;
+                top:150px;
+                transform: translate(-50%,-50%);
+                color: white;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 8px 0;
+            }
+
+            #g,#a,#r,img,.name{
+                cursor: move;
+            }
+
+            p {
+                font-size: 14px;
+                color: #7f8c9b;
+                line-height: 150%;
+                margin-bottom: 8px;
+            }
+
+            button {
+                border: none;
+
+                font-weight: 600;
+                color: #0077ff;
+                background-color: transparent;
+
+                margin: 0 auto;
+                display: block;
+
+                cursor: pointer;
+                margin-bottom: 2px;
+            }
+
+            .cardDetails {
+                padding: 0px 24px;
+                display: none;
+                max-height: 250px;
+                overflow: scroll;
+                margin-bottom: 7px;
+            }
+
+            button:active {
+                color: #e0efff;
+            }
+
+
+            #c1{
+                left:5vw;
+                top:15vh;
+            }
+
+            #c2{
+                left:50vw;
+                transform: translateX(-50%);
+
+                top:35vh;
+            }
+
+            #c3{
+                left:70vw;
+                top:20vh;
+            }
+
+            h1{
+                position: absolute;
+                color: white;
+                font-size: 5em;
+                margin: 0;
+                padding: 0;
+            }
+
+            #g{
+                bottom:0;
+                right:0;
+            }
+
+            #a{
+                left:.1em;
+                font-size: 12em;
+                top:50%;
+                transform: translateY(-50%);
+            }
+
+            #r{
+                top:0;
+                right:0;
+            }
+
+            #gar{
+                position: absolute;
+                top:15vh;
+                left:55%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="gar">
+            <h1 id="g">Genetics</h1>
+            <h1 id="a">&</h1>
+            <h1 id="r">Race</h1>
+        </div>
+
+        <div class="container" id="c1">
+            <img src="https://media.istockphoto.com/photos/blue-chromosome-dna-and-gradually-glowing-flicker-light-matter-when-picture-id1297146235?b=1&k=20&m=1297146235&s=170667a&w=0&h=vUyHfisjnfzyhzeZvYzt23iaHSEl6UkpoiFctK4BMbc=" alt="Lago di Braies">
+
+          <div class="card">
+
+            <div class="name">How are genetics reshaping the conception of race?</div>
+
+            <div class="cardDetails" id="cd1">
+
+                <p>
+                    The concept of dividing humans into categories has been around for a very long time. As far back as Ancient Greece the famous philosopher Aristotle believed some humans were born to be kings and others were determined to be slaves. This line of thinking developed into the 1700s where it was believed there were 5 races: Africans, Asians, Native Americans, Caucasians. With some being biologically superior to others. The idea continues to persist even to this day, but modern-day genetic research is beginning to prove that race is a social construct and not a biological attribute. 
+                    <br><br>
+                    In 2003, scientists completed the Human Genome Project, this made it finally possible to study ancestry through genetics. What scientists found was that any two unrelated human beings on the planet are 99.9% identical in their DNA sequence. Not only that but of the 0.1% that varies, almost all of it is found between individuals within the same race. This means there is so much ambiguity between the races, and so much variation within them, that two people of European descent may share more of their DNA with someone of Asian decent than they do with each other.
+                    <br><br>
+                    In the biological and social sciences, scientist have come to the consensus that race is a social construct, not a biological attribute. Scientists in genetics now use the term <em>ancestry</em> to describe human diversity instead of race since DNA can be used to map our ancestry but does not map onto race.
+                </p>
+      
+            </div>
+
+            <button onclick="buttonClick(this,document.getElementById('cd1'))">Read more</button>
+
+          </div>
+
+        </div>
+
+        <div class="container" id="c2">
+            <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2020/06/Diversity-1-1024x440.jpg" alt="Lago di Braies">
+
+          <div class="card">
+
+            <div class="name">What has the Covid 19 pandemic taught me about race & society?</div>
+
+            <div class="cardDetails" id="cd2">
+
+                <p>
+                    The pandemic has brought the disparity of health care between races to the forefront of public opinion. In the United States a Black American is nearly 2x more likely to die of covid than a White American not to mention Native Americans who are nearly 3.5x more likely to die of covid. This is unacceptable for the 21st century and really opened my eyes towards the inequality that exists between races today.
+                    <br><br>
+                    Another thing the pandemic has taught me is how society's opinion changes towards races. Before Covid-19 Asian Canadians & Americans were for the most part equal to White Canadians, by equal I mean equal right, equal living conditions etc. Although none of this has changed over the pandemic I feel the perception of Asian Canadians & Americans has changed drastically where in a pre-pandemic world most people would view Asian Canadians & Americans as equals, Now in a post pandemic world people will tend to distance themselves from Asian Canadians & Americans and use racist slurs. I work at a Thai Restaurant and over the course of the pandemic there were racist slurs graffitied behind the restaurant.Once again this disgusted me and serves as a reminder of the racism that continues to exist today.
+                </p>
+      
+            </div>
+
+            <button onclick="buttonClick(this,document.getElementById('cd2'))">Read more</button>
+
+          </div>
+
+        </div>
+
+        <div class="container" id="c3">
+            <img src="https://cdn.sanity.io/images/e422uarq/production/016018a08eddf9bbaee619b77a92ff51051495f1-2000x945.png?w=1000&h=562&fit=crop" alt="Lago di Braies">
+
+          <div class="card">
+
+            <div class="name">How do I see my own identity in our community?</div>
+
+            <div class="cardDetails" id="cd3">
+
+              <p>Being a white Canadian born in the 21st century likely puts me at the top of the "pyramid of privilege" therefore I am inherently blind to the injustice in the world especially when it comes to racism. Being born in Canada I believe has shielded me a lot from injustice with Canada being for the most part a very equal county relative to countries such as the United States, Jamaica, South Africa etc. I also believe being born in the 21st century distanced me form issues of race, for a time I believed the issue of race was a thing of the past especially in Canada. Luckily for me, having friends of multiple ethnicities and having good teachers over the years has helped open my eyes towards the inequality that continues to exist in today's world.</p>
+      
+            </div>
+
+            <button onclick="buttonClick(this,document.getElementById('cd3'))">Read more</button>
+
+          </div>
+
+        </div>
+      </body>
+      <script>
+        function buttonClick(button,target){
+            if(target.style.display == "block"){
+                target.style.display = "none"
+                button.innerHTML = "Read more"
+            }else{
+                target.style.display = "block"
+                button.innerHTML = "Show less"
+            }
+        }
+
+        dragElement(document.getElementById("c1"));
+        dragElement(document.getElementById("c2"));
+        dragElement(document.getElementById("c3"));
+        dragElement(document.getElementById("gar"));
+
+        function dragElement(elmnt) {
+
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+            if (document.getElementById(elmnt.id + "header")) {
+                // if present, the header is where you move the DIV from:
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                // otherwise, move the DIV from anywhere inside the DIV: 
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                // stop moving when mouse button is released:
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+</html>
